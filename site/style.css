@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Baloo", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #22639E;
+    font-weight: 600;
+    font-size: 3rem;
+}
+h2 {
+    color: #22639E;
+    font-weight: 500;
+    opacity: 0.9;
+}
+  
+h3 {
+    color: #22639E;
+    font-weight: 600;
+}
+
+p {
+    color: #22639E;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    max-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+    background: white;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    border-radius: 50%;
+}
+
+.circle1 {
+    height: 20rem;
+    width: 20rem;
+    top: 5%;
+    left: 10%;
+}
+
+.circle2 {
+    height: 10em;
+    width: 10rem;
+    bottom: 5%;
+    left: 10%;
+}
+
+.circle3 {
+    height: 30rem;
+    width: 30rem;
+    bottom: 5%;
+    right: 10%;
+}
+
+.circle4 {
+    height: 15rem;
+    width: 15rem;
+    top: 5%;
+    right: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 20px 40px;
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem;
+}
+
+.home {
+    flex: 2;
+}
+
+.link {
+    max-height: 2vh;
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ad-container {
+    border-radius: 2rem;
+    width: 22rem;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    padding: 45px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ad-container h2{
+    width: 40%;
+    color: white;
+}
+
+.ad-container img{
+    position: absolute;
+    top: -15px;
+    right: 10px
+}
+
+.search {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.search input{
+    border: none;
+    border-radius: 2rem;
+    width: 50%;
+    padding: 0.5rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+}
+
+.photo {
+    border-radius: 50%;
+}
