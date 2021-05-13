@@ -55,11 +55,21 @@ p{
     border-radius: 50%;
 }
 
+#circle1, #circle2, #circle3, #circle4 {animation-timing-function: ease-in;}
+
 .circle1{
     height: 20rem;
     width: 20rem;
-    top: 5%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    animation: circle1Move 5s infinite;
+}
+
+@keyframes circle1Move{
+    0% {left: 50%; top: 50%;}
+    25% {left: 0%; top: 20%}
+    75% {left: 10%; top: 0%}
+    100% {left: 10%; top: 5%;}
 }
 
 .circle2{
@@ -67,6 +77,9 @@ p{
     width: 10rem;
     bottom: 5%;
     left: 10%;
+    animation-name: circle2Move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .circle3{
@@ -74,6 +87,9 @@ p{
     width: 30rem;
     bottom: 5%;
     right: 10%;
+    animation-name: circle3Move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .circle4{
@@ -81,6 +97,9 @@ p{
     width: 15rem;
     top: 5%;
     right: 10%;
+    animation-name: circle4Move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .dashboard{
@@ -96,24 +115,41 @@ p{
     border-radius: 2rem;
 }
 
+.photo{
+    border-radius: 50%;
+}
+
+.dashboard a{
+    text-decoration: none;
+}
+
 .home{
+    display: flex;
+    flex-direction: column;
     flex: 2;
-    padding: 3rem;
 }
 
 .link{
-    max-height: 2vh;
+    max-height: 7vh;
     display: flex;
-    margin: 2rem 0rem;
+    margin: 0rem ;
     padding: 1rem 5rem;
     align-items: center;
     white-space: nowrap;
 }
 
+.link h2{
+    margin: 0.7em;
+}
+
+.link:hover{
+    background: rgba(108, 219, 235, 0.2);   
+}
+
 .ad-container{
     border-radius: 2rem;
     width: 22rem;
-    background: linear-gradient(to right top, #22639E, #6cdbeb);
+    background: linear-gradient(to right top, #22639e, #6cdbeb);
     padding: 45px;
     position: relative;
 }
@@ -133,25 +169,23 @@ p{
 
 .search{
     text-align: center;
-    padding-bottom: 2rem;
+    margin: 1rem 0rem;
 }
 
 .search input{
     border: none;
     border-radius: 2rem;
-    width: 20rem;
+    width: 50%;
+    margin: 1rem 0rem;
     padding: 0.5rem;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
-}
-
-.photo{
-    border-radius: 50%;
 }
 
 .musics{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .musics img{
@@ -165,14 +199,28 @@ p{
 .music{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    margin: 0.5rem;
+    width: 80%;
+    margin: 1rem;
     border-radius: 1rem;
     display: flex;
     background: white;
 }
 
-.music-name{
+.music:hover{
+    background: #22639e;
+    width: 90%;
+    transition: 200ms;
+}
 
+.music:hover h2{
+    color: white;
+}
+
+.music:hover p{
+    color: white;
+}
+
+.music-name{
     align-items: center;
     padding: 1rem;
     white-space: nowrap;
