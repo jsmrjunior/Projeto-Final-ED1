@@ -98,7 +98,7 @@ p{
     top: 5%;
     right: 10%;
     animation-name: circle4Move;
-    animation-duration: 5s;
+    animation-duration: s;
     animation-iteration-count: infinite;
 }
 
